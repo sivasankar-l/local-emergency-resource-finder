@@ -1,0 +1,24 @@
+{
+  "name": "local-emergency-resource-finder",
+  "version": "1.0.0",
+  "description": "Local Emergency Resource Finder - Academic Innovative Project (IIP) at Vellore Institute of Technology (VIT)",
+  "scripts": {
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "create-admin": "npm --prefix server run create-admin",
+    "test:server": "npm --prefix server test",
+    "build:client": "npm --prefix client run build"
+  },
+  "keywords": [
+    "vit",
+    "iip",
+    "emergency-resource-finder",
+    "leaflet",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "VIT IIP Team - Frontend / UI-UX Lead",
+  "license": "MIT"
+}
