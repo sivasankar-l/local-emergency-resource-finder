@@ -3,12 +3,13 @@
   "name": "Local Emergency Resource Finder",
   "icons": [
     {
-      "src": "/vite.svg",
+      "src": "./vite.svg",
       "type": "image/svg+xml",
       "sizes": "192x192 512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/local-emergency-resource-finder/",
+  "scope": "/local-emergency-resource-finder/",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",
   "display": "standalone",

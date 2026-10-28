@@ -9,11 +9,12 @@ import { LocationProvider } from './context/LocationContext';
 import { AuthProvider } from './context/AuthContext';
 import { ConnectivityProvider } from './context/ConnectivityContext';
 
-// Register Service Worker for offline emergency resource caching
+// Register Service Worker for offline emergency resource caching using dynamic base URL
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {
+    const swPath = `${import.meta.env.BASE_URL}sw.js`;
     navigator.serviceWorker
-      .register('/sw.js')
+      .register(swPath)
       .then((reg) => {
         console.log('[PWA] Service Worker registered:', reg.scope);
       })
@@ -25,7 +26,7 @@ if ('serviceWorker' in navigator && import.meta.env.PROD) {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <LanguageProvider>
         <LocationProvider>
           <AuthProvider>
