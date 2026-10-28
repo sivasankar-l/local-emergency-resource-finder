@@ -22,3 +22,10 @@
   "author": "VIT IIP Team - Frontend / UI-UX Lead",
   "license": "MIT"
 }
+"vite": "^6.1.0"
+
+  
+"@vitejs/plugin-react": "^4.3.4"
+
+  
+"react-router-dom": "^6.29.0"
